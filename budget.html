@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/budget.css">
+        <!-- Slick Slider CSS -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <!-- Slick Slider JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <!-- Font Link -->
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid">
+      
+                <div class="col-3 logo-nav-div">
+                    <a class="navbar-brand" href="index.html"><img src="images/towers_title_logo.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+      
+                <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto links-nav-div">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Servicios
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="industrial_adv.html">Consultoria Industrial</a>
+                                <a class="dropdown-item" href="capacitacion.html">Capacitacion</a>
+                                <a class="dropdown-item" href="3d_printing.html">Impresion 3D</a>
+                                <a class="dropdown-item" href="reverse_engineering.html">Ingenieria Inversa</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="budget.html">Presupuestá al Instante</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="contact.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="trust_us.html">Confían en Nosotros</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+      
+                <div class="col-2 contact-nav-div">
+                    
+                    <a data-bs-toggle="modal" data-bs-target="#contact_modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="black" class="bi bi-headset" viewBox="0 0 20 20">
+                            <path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/>
+                        </svg>
+                    </a>
+                </div>
+      
+            </div>
+      
+        </nav>
+
+        <!-- Main Container -->
+        <div class="card">
+            <div class="card-header">
+                <a class = 'btn btn-outline-secondary' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'blackout_color_tab'>Color de Blackout</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'blackout_body_type_tab'>Tipo de Tela</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'screen_color_tab'>Color de Screen</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'measures_tab'>Medidas de la Cortina</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'placing_type_tab'>Tipo de Colocación</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'falling_type_tab'>Caída del Rollo</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'control_position_tab'>Posición del Mando</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'chain_type_tab'>Tipo de Cadena</a>
+                <a class = 'btn btn-secondary disabled' data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" id = 'control_tab'>Info Final</a>
+            </div>
+            <div class="card-body">
+                <div class='section' id='blackout_color_section'>
+                    <h5 class="card-title">Color de la cortina Black Out</h5>
+                    <div class="row">
+                        <div class="card col-2" style="width: 18rem;">
+                            <img src="images/red_body.png" class="card-img-top" alt="rojo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rojo</h5>
+                                <input type="radio" name="black_out_color" value="red" id="black_out_color_red">
+                            </div>
+                        </div>
+                        <div class="card col-2" style="width: 18rem;">
+                            <img src="images/blue_body.png" class="card-img-top" alt="azul">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Azul</h5>
+                                <input type="radio" name="black_out_color" value="blue" id="black_out_color_blue">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="btn btn-primary">Continuar</a>
+                </div>
+                <div class='section hidden' id='blackout_body_type_section'>
+                    <h5 class="card-title">Tipo de Tela</h5>
+                    <br>
+                    <label for="black_out_body_type_premium">Premium</label>
+                    <input type="radio" name="black_out_body_type" value="premium" id="black_out_body_type_premium">
+                    <br>
+                    <label for="black_out_body_type_economy">Económica</label>
+                    <input type="radio" name="black_out_body_type" value="economy" id="black_out_body_type_economy">
+                    <br><br>
+                    <a class="btn btn-primary">Continuar</a>
+                    <a class="btn btn-secondary">Atras</a>
+                </div>
+                <div class='section hidden' id='screen_color_section'>
+                    <h5 class="card-title">Color del Screen</h5>
+                    <div class="row">
+                        <div class="card col-2" style="width: 18rem;">
+                            <img src="images/red_body.png" class="card-img-top" alt="rojo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rojo</h5>
+                                <input type="radio" name="screen_color" value="red" id="screen_color_red">
+                            </div>
+                        </div>
+                        <div class="card col-2" style="width: 18rem;">
+                            <img src="images/blue_body.png" class="card-img-top" alt="azul">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Azul</h5>
+                                <input type="radio" name="screen_color" value="blue" id="screen_color_blue">
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <a class="btn btn-primary">Continuar</a>
+                    <a class="btn btn-secondary">Atras</a>
+                </div>
+                <div class='section hidden' id='measures_section'>
+                    <h5 class="card-title">Medidas de la Cortina*</h5>
+                    <br>
+                    <label for="height">Altura (en cm)</label>
+                    <br>
+                    <input type="number" id="height">
+                    <br>
+                    <label for="width">Ancho (en cm)</label>
+                    <br>
+                    <input type="number" id="width">
+                    <br><br>
+                    <a class="btn btn-primary">Continuar</a>
+                    <a class="btn btn-secondary">Atras</a>
+                </div>
+                <div class='section hidden' id='placing_type_section'>
+                    <h5 class="card-title">Tipo de Colocación</h5>
+                    <br>
+                    <label for="wall_placement">Colocación a Pared</label>
+                    <input type="radio" name="placement_type" value="wall" id="wall_placement">
+                    <br>
+                    <label for="roof_placement">Colocación a Techo</label>
+                    <input type="radio" name="placement_type" value="roof" id="roof_placement">
+                    <br><br>
+                    <a class="btn btn-primary">Continuar</a>
+                    <a class="btn btn-secondary">Atras</a>
+                </div>
+                <div class='section hidden' id='falling_type_section'>
+                    <h5 class="card-title">Caída del Rollo</h5>
+                    <br>
+                    <label for="rear_fall">Caída por Detrás</label>
+                    <input type="radio" name="fall" value="rear" id="rear_fall">
+                    <br>
+                    <label for="front_fall">Colocación a Techo</label>
+                    <input type="radio" name="fall" value="front" id="front_fall">
+                    <br><br>
+                    <a class="btn btn-primary">Continuar</a>
+                    <a class="btn btn-secondary">Atras</a>
+                </div>
+                <div class='section hidden' id='control_position_section'>
+                    <h5 class="card-title">Posición del Mando</h5>
+                    <br>
+                    <label for="left_position">Izquierda</label>
+                    <input type="radio" name="control_position" value="left" id="left_position">
+                    <br>
+                    <label for="right_position">Derecha</label>
+                    <input type="radio" name="control_position" value="right" id="right_position">
+                    <br><br>
+                    <a class="btn btn-primary">Continuar</a>
+                    <a class="btn btn-secondary">Atras</a>
+                </div>
+                <div class='section hidden' id='chain_type_section'>
+                    <h5 class="card-title">Tipo de Cadena</h5>
+                    <br>
+                    <label for="plastic_chain">Plástica</label>
+                    <input type="radio" name="chain_type" value="plastic" id="plastic_chain">
+                    <br>
+                    <label for="metallic_chain">Metálica</label>
+                    <input type="radio" name="chain_type" value="metallic" id="metallic_chain">
+                    <br>
+                    <label for="automatic">Automatizada</label>
+                    <input type="radio" name="chain_type" value="automatic" id="automatic">
+                    <br><br>
+                    <a class="btn btn-primary">Continuar</a>
+                    <a class="btn btn-secondary">Atras</a>
+                </div>
+                <div class='section hidden' id='control_section'>
+                    <h5 class="card-title">Control</h5>
+                    <br>
+                    <h5 class="card-title">Color de la cortina Black Out</h5>
+                    <div class="card col-2 hidden" style="width: 18rem;" id="black_out_color_red_control">
+                        <img src="images/red_body.png" class="card-img-top" alt="rojo">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Rojo</h5>
+                        </div>
+                    </div>
+                    <div class="card col-2 hidden" style="width: 18rem;" id="black_out_color_blue_control">
+                        <img src="images/blue_body.png" class="card-img-top" alt="azul">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Azul</h5>
+                        </div>
+                    </div>
+                    <br>
+                    <h5 class="card-title">Tipo de Tela</h5>
+                    <input type="text" name="black_out_body_type" value="Premium" class="hidden" id="black_out_body_type_premium_control" disabled>
+                    <input type="text" name="black_out_body_type" value="Económica" class="hidden" id="black_out_body_type_economy_control" disabled>
+                    <br>
+                    <h5 class="card-title">Color del Screen</h5>
+                    <div class="row">
+                        <div class="card col-2 hidden" style="width: 18rem;" id="screen_color_red_control">
+                            <img src="images/red_body.png" class="card-img-top" alt="rojo">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Rojo</h5>
+                            </div>
+                        </div>
+                        <div class="card col-2 hidden" style="width: 18rem;" id="screen_color_blue_control">
+                            <img src="images/blue_body.png" class="card-img-top" alt="azul">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Azul</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <h5 class="card-title">Medidas de la Cortina*</h5>
+                    <div>
+                        <label for="height">Altura (en cm)</label>
+                        <input type="number" class="hidden" id="height_control" disabled>    
+                    </div>
+                    <div>
+                        <label for="width">Ancho (en cm)</label>
+                        <input type="number" class="hidden" id="width_control" disabled>
+                    </div>
+                    <br>
+                    <h5 class="card-title">Tipo de Colocación</h5>
+                    <label for="wall_placement">Colocación a Pared</label>
+                    <input type="text" name="placement_type" value="A la Pared" class="hidden" id="wall_placement_control" disabled>
+                    <label for="roof_placement">Colocación a Techo</label>
+                    <input type="text" name="placement_type" value="Al Techo" class="hidden" id="roof_placement_control" disabled>
+                    <br>
+                    <h5 class="card-title">Caída del Rollo</h5>
+                    <input type="text" name="fall" value="Por Detrás" class="hidden" id="rear_fall_control" disabled>
+                    <input type="text" name="fall" value="Por Delante" class="hidden" id="front_fall_control" disabled>
+                    <br>
+                    <h5 class="card-title">Posición del Mando</h5>
+                    <input type="text" name="control_position" value="Izquierda" class="hidden" id="left_position_control" disabled>
+                    <input type="text" name="control_position" value="Derecha" class="hidden" id="right_position_control" disabled>
+                    <br>
+                    <h5 class="card-title">Tipo de Cadena</h5>
+                    <input type="text" name="chain_type" value="Plástica" class="hidden" id="plastic_chain_control" disabled>
+                    <input type="text" name="chain_type" value="Metálica" class="hidden" id="metallic_chain_control" disabled>
+                    <input type="text" name="chain_type" value="Automatizada" class="hidden" id="automatic_control" disabled>
+                    <br>
+                    <a class="btn btn-primary">Calcular</a>
+                    <a class="btn btn-secondary">Atras</a>
+                    <div id="budget_container">
+                        El valor final para la selección realizada es de:
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="contact_modal" tabindex="-1" aria-labelledby="contact_modal_title" aria-hidden="true">
+
+            <div class="modal-dialog">
+        
+                <div class="modal-content">
+
+                    <div class="modal-body">
+
+                    <div class="background-container"></div>
+                    
+                    <div class="form-container">
+                        <form 
+                            class="form"
+                            name="contact"
+                            method="POST"
+                            data-netlify="true"
+                            onSubmit="submit"
+                            action="/success/"
+                        >
+                            <p class="title">Contáctanos</p>
+                            <p class="message">Completa el formulario y a la brevedad nos comunicaremos contigo para conversar en detalle.</p>
+                            <div class="flex">
+                                <label>
+                                    <input required placeholder="Nombre" type="text" class="input" name="contact_name">
+                                </label>
+                                <label>
+                                    <input required placeholder="Apellido" type="text" class="input" name="contact_surname">
+                                </label>
+                            </div>
+                                    
+                            <label>
+                                <input required placeholder="Email" type="email" class="input" name="contact_email">
+                            </label> 
+                                
+                            <label>
+                                <textarea required placeholder="Consulta" class="input" name="contact_request" rows="5"></textarea>
+                            </label>
+                            <button>Solicitar Reunión</button>
+                            <button type="button" data-bs-dismiss="modal" aria-label="Close">Cerrar</button>
+
+                        </form>
+
+                    </div>
+
+                    </div>
+                
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Socials Footer -->
+        <footer class="site-footer" class="pt-2 my-2 border-top text-center">
+            <ul class="wrapper">
+                <li class="icon whatsapp">
+                    <span class="tooltip">Whatsapp</span>
+                    <span><a href="https://api.whatsapp.com/send?phone=5491144992640"><i class="fab fa-whatsapp"></i></a></span>
+                </li>
+                <li class="icon instagram">
+                    <span class="tooltip">Instagram</span>
+                    <span><i class="fab fa-instagram"></i></span>
+                </li>
+                <li class="icon phone">
+                    <span class="tooltip">Teléfono</span>
+                    <span><a href="tel:5491144992640"><i class="fa fa-phone"></i></a></span>
+                </li>
+                <li class="icon email">
+                    <span class="tooltip">Email</span>
+                    <span><a href="mailto:contacto@makerslab.com.ar"><i class="fab fa-at"></i></a></span>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/budget.js"></script>
+
+    </body>
+
+</html>

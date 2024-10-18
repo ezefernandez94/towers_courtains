@@ -1,0 +1,13 @@
+.card-header .btn {
+    padding: 15px 15px;
+    border: 2px solid #000000;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    color: #232127;
+}
+
+label {
+    color:#000000;
+}
